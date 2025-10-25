@@ -2,7 +2,7 @@
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Hotels.xsd">
   
   <Hotel Rating="4.2">
-    <Name>Westin</Name>
+    <n>Westin</n>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
     <Address NearestAirport="Sky Harbor">
@@ -15,7 +15,7 @@
   </Hotel>
   
   <Hotel Rating="4.5">
-    <Name>Hilton Garden Inn</Name>
+    <n>Hilton Garden Inn</n>
     <Phone>480-545-6000</Phone>
     <Phone>800-445-8667</Phone>
     <Address>
@@ -28,7 +28,7 @@
   </Hotel>
   
   <Hotel>
-    <Name>Sheraton Grand Phoenix</Name>
+    <n>Sheraton Grand Phoenix</n>
     <Address NearestAirport="Sky Harbor">
       <Number>340</Number>
       <Street>N 3rd St</Street>
@@ -39,8 +39,8 @@
   </Hotel>
   
   <Hotel Rating="4.7">
-    <Name>The Phoenician</Name>
-    <Name>The Phoenician Resort</Name>
+    <n>The Phoenician</n>
+    <n>The Phoenician Resort</n>
     <Phone>480-941-8200</Phone>
     <Phone>800-888-8234</Phone>
     <Phone>480-947-4311</Phone>
@@ -53,7 +53,7 @@
   </Hotel>
   
   <Hotel Rating="4.3">
-    <Name>Hyatt Regency Scottsdale</Name>
+    <n>Hyatt Regency Scottsdale</n>
     <Phone>480-444-1234</Phone>
     <Address NearestAirport="Scottsdale Airport">
       <Number>7500</Number>
