@@ -1,32 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  
-  <!-- Define custom types for better validation -->
-  <xs:simpleType name="phoneType">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="[0-9\-]+"/>
-      <xs:minLength value="10"/>
-    </xs:restriction>
-  </xs:simpleType>
-  
-  <xs:simpleType name="zipType">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="[0-9]{5}"/>
-    </xs:restriction>
-  </xs:simpleType>
-  
-  <xs:simpleType name="stateType">
-    <xs:restriction base="xs:string">
-      <xs:pattern value="[A-Z]{2}"/>
-    </xs:restriction>
-  </xs:simpleType>
-  
-  <xs:simpleType name="ratingType">
-    <xs:restriction base="xs:decimal">
-      <xs:minInclusive value="0.0"/>
-      <xs:maxInclusive value="5.0"/>
-    </xs:restriction>
-  </xs:simpleType>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
   
   <!-- Root element -->
   <xs:element name="Hotels">
@@ -36,21 +9,21 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Name" type="xs:string"/>
-              <xs:element name="Phone" type="phoneType" minOccurs="1" maxOccurs="unbounded"/>
+              <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="Number" type="xs:string"/>
                     <xs:element name="Street" type="xs:string"/>
                     <xs:element name="City" type="xs:string"/>
-                    <xs:element name="State" type="stateType"/>
-                    <xs:element name="Zip" type="zipType"/>
+                    <xs:element name="State" type="xs:string"/>
+                    <xs:element name="Zip" type="xs:string"/>
                   </xs:sequence>
                   <xs:attribute name="NearestAirport" type="xs:string" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="Rating" type="ratingType" use="optional"/>
+            <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
