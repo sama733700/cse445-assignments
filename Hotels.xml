@@ -140,4 +140,17 @@
     </Address>
   </Hotel>
   
+  <Hotel Rating="3.8">
+    <Name>Homewood Suites Tempe</Name>
+    <Phone>480-804-1515</Phone>
+    <Phone>800-225-5466</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>1255</Number>
+      <Street>W Rio Salado Pkwy</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+  
 </Hotels>
